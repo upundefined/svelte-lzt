@@ -31,6 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@sveltejs/vite-plugin-svelte", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:7.0.0"],\
           ["@tsconfig/svelte", "npm:5.0.8"],\
           ["@types/node", "npm:24.12.0"],\
+          ["@vercel/analytics", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.1"],\
           ["svelte", "npm:5.55.1"],\
           ["svelte-check", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.4.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -428,6 +429,56 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@typescript-eslint-types-npm-8.58.0-6ca1ef66f6-10c0.zip/node_modules/@typescript-eslint/types/",\
         "packageDependencies": [\
           ["@typescript-eslint/types", "npm:8.58.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@vercel/analytics", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@vercel-analytics-npm-2.0.1-728d94e8b4-10c0.zip/node_modules/@vercel/analytics/",\
+        "packageDependencies": [\
+          ["@vercel/analytics", "npm:2.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/@vercel-analytics-virtual-1ed0f94c3a/4/AppData/Local/Yarn/Berry/cache/@vercel-analytics-npm-2.0.1-728d94e8b4-10c0.zip/node_modules/@vercel/analytics/",\
+        "packageDependencies": [\
+          ["@remix-run/react", null],\
+          ["@sveltejs/kit", null],\
+          ["@types/next", null],\
+          ["@types/nuxt", null],\
+          ["@types/react", null],\
+          ["@types/remix-run__react", null],\
+          ["@types/svelte", null],\
+          ["@types/sveltejs__kit", null],\
+          ["@types/vue", null],\
+          ["@types/vue-router", null],\
+          ["@vercel/analytics", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.1"],\
+          ["next", null],\
+          ["nuxt", null],\
+          ["react", null],\
+          ["svelte", "npm:5.55.1"],\
+          ["vue", null],\
+          ["vue-router", null]\
+        ],\
+        "packagePeers": [\
+          "@remix-run/react",\
+          "@sveltejs/kit",\
+          "@types/next",\
+          "@types/nuxt",\
+          "@types/react",\
+          "@types/remix-run__react",\
+          "@types/svelte",\
+          "@types/sveltejs__kit",\
+          "@types/vue-router",\
+          "@types/vue",\
+          "next",\
+          "nuxt",\
+          "react",\
+          "svelte",\
+          "vue-router",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1467,6 +1518,7 @@ const RAW_RUNTIME_STATE =
           ["@sveltejs/vite-plugin-svelte", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:7.0.0"],\
           ["@tsconfig/svelte", "npm:5.0.8"],\
           ["@types/node", "npm:24.12.0"],\
+          ["@vercel/analytics", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:2.0.1"],\
           ["svelte", "npm:5.55.1"],\
           ["svelte-check", "virtual:c56b46d83dc705f61d645efafd50b5dd10b694a413a2075f2bfa433bbaa41df431f824c0f747468efbf1694d7d2f15adbae617c2c5c3f6b6e0b1978b92526b7c#npm:4.4.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
