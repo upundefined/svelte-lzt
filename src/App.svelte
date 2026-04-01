@@ -437,7 +437,7 @@
         min-width: 44px;
         background-color: #192f27;
         border-radius: 12px;
-        border: 1px solid #0b7d54;
+        border: 2px solid #0b7d54;
     }
     .footerLeft {
         display: flex;
@@ -551,10 +551,10 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        padding: 9px 12px;
+        padding: 8px 11px;
         border-radius: 8px;
         background: #ffffff08;
-        border: 1px solid #24242400;
+        border: 2px solid #24242400;
         max-width: 500px;
         cursor: pointer;
         transition: 0.2s ease;
@@ -723,7 +723,7 @@
         padding: 8px 15px;
         cursor: pointer;
         border-radius: 8px;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
     }
     .subForumChild:hover {
         background: rgba(255, 255, 255, 0.02);
