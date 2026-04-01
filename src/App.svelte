@@ -683,7 +683,8 @@
     }
     .subForumItem.isSelected,
     .subForumItem.isActive,
-    .subForumName .forumIcon.isActive, .subForumName .forumIcon.isSelected {
+    .subForumItem.isSelected .forumIcon,
+    .subForumName .forumIcon.isActive {
         color: #00ba78;
     }
     .subForumItem.isSelected .hasChildren {
