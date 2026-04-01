@@ -280,9 +280,9 @@
         </div>
         <div class="forumActions">
           {#if selected.forum_rules_thread_id}
-            <a class="button" href="threads/{selected.forum_rules_thread_id}/">Правила раздела</a>
+            <a class="button" href="https://lolz.live/threads/{selected.forum_rules_thread_id}/">Правила раздела</a>
           {/if}
-          <a class="button createThreadButton" class:disabled={!selected.permissions?.create_thread} href="forums/{selected.forum_id}/create-thread">
+          <a class="button createThreadButton" class:disabled={!selected.permissions?.create_thread} href="https://lolz.live/forums/{selected.forum_id}/create-thread">
             <span class="text">{selected.permissions?.create_thread ? 'Создать тему' : 'Нельзя создать тему'}</span>
           </a>
         </div>
