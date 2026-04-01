@@ -208,7 +208,7 @@
                     {@const hasChildren = selectedForum && forumsByParentIdFiltered()[selectedForum.forum_id]}
 
                     {#if selectedForum && isRowEnd && currentRow === selectedRow && hasChildren}
-                      <div class="subBlock" transition:slide={{ duration: 200 }}>
+                      <div class="subBlock" transition:slide={{ duration: 300 }}>
                         <div class="subTitle">{selectedForum.forum_title}: подразделы</div>
                         <div class="subForumItems">
                           {#each forumsByParentIdFiltered()[selectedForum.forum_id] as sub (sub.forum_id)}
