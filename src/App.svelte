@@ -154,10 +154,11 @@
       }
     }
   });
+  const selectedForumDescription = $derived(crumbs.reverse().filter((x) => !!x.forum_description)[0]?.forum_description);
 </script>
 
 <svelte:window bind:innerWidth={winW} />
-<div class="container">
+<div class="container" >
   <div class="titleContainer">
     <div class="titleWrap">
       <span class="title">Выбор раздела</span>
@@ -165,7 +166,7 @@
     </div>
   </div>
   <div class="contentContainer">
-    <div class="content">
+    <div class="content" class:footerShown={selected}>
       <div class="searchContainer">
         <input type="text" bind:value={searchText} placeholder="Поиск..." />
         {#if searchText}
@@ -263,18 +264,18 @@
         <div class="footerLeft nodeTitle current">
           <div class="selectedForumIcon forumIcon NodeSvgIcon nodeIcon{selectedForum?.forum_id}"></div>
           <div class="selectedForumInfo">
-            <div class="crumbs">
-              {#each crumbs as crumb, i}
-                {@const isLast = i === crumbs.length - 1}
-                <div class="crumb">{isLast ? crumb?.forum_title : crumb?.forum_title}</div>
-                {#if !isLast}
-                  <div class="sep">/</div>
-                {/if}
-              {/each}
-            </div>
-            {#if selected.forum_description}
-              <div class="forumDesc">{selected.forum_description}</div>
-            {/if}
+              <div class="crumbs">
+                  {#each crumbs as crumb, i}
+                      {@const isLast = i === crumbs.length - 1}
+                      <div class="crumb">{isLast ? crumb?.forum_title : crumb?.forum_title}</div>
+                      {#if !isLast}
+                          <div class="sep">/</div>
+                      {/if}
+                  {/each}
+              </div>
+              {#if selectedForumDescription}
+                  <div class="forumDesc">{selectedForumDescription}</div>
+              {/if}
           </div>
         </div>
         <div class="forumActions">
@@ -337,13 +338,12 @@
         z-index: 10;
         overflow: hidden;
         background-color: var(--contentBackground);
-        border-top: 2px solid #242424;
-        border-radius: 8px;
+        border-radius: 0 0 8px 8px;
         box-shadow: 0 -3px 0 0 #242424;
     }
     .selectedForumInfo {
         display: grid;
-        gap: 6px;
+        gap: 2px;
     }
 
     .footerBlock .forumActions {
@@ -415,10 +415,10 @@
     }
     .crumbs > .crumb {
         white-space: wrap;
-        font-size: 12px;
+        font-size: 13px;
         color: #949494;
     }
-    .crumbs > .crumb:last-of-type {
+    .crumbs > .crumb:last-child {
         font-weight: bold;
         font-size: 14px;
         color: #d6d6d6;
@@ -436,7 +436,6 @@
     }
     .footerLeft {
         display: flex;
-        align-items: center;
         gap: 15px;
     }
     .content {
@@ -444,6 +443,9 @@
         background-color: var(--contentBackground);
         border-radius: 8px;
         min-height: 40vh;
+    }
+    .content.footerShown {
+        border-radius: 8px 8px 0 0;
     }
     .searchContainer {
         margin-bottom: 20px;
