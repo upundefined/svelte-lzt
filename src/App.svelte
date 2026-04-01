@@ -700,7 +700,7 @@
     }
 
     .subForumContainer {
-        background: rgba(40, 40, 40, 0.95);
+        background: rgb(40, 40, 40);
         border-radius: 8px;
     }
 
