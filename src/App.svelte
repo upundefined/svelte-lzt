@@ -1,6 +1,5 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
-  import { inject } from "@vercel/analytics"
   import { forumsData, type IForum } from './forums';
   import { onMount } from 'svelte';
   import Spinner from './Spinner.svelte';
@@ -12,7 +11,6 @@
   $effect(() => {
     colsPerRow = winW <= 520 ? 1 : winW <= 720 ? 2 : 3;
   });
-  onMount(() => inject())
 
   let selectedForum: IForum | null = $state(null);
   let selectedSubForums: IForum[] = $state([]);
