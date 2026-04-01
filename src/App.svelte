@@ -331,7 +331,7 @@
     .footerBlock {
         padding: 16px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 20px;
         justify-content: space-between;
         align-items: center;
@@ -340,6 +340,11 @@
         background-color: var(--contentBackground);
         border-radius: 0 0 8px 8px;
         box-shadow: 0 -3px 0 0 #242424;
+    }
+    @media (max-width: 800px) {
+        .footerBlock {
+            flex-wrap: wrap;
+        }
     }
     .selectedForumInfo {
         display: grid;
