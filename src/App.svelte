@@ -338,6 +338,7 @@
         z-index: 10;
         overflow: hidden;
         background: rgba(5, 5, 5, 0.4) url(https://lztcdn.com/files/ed0e59d5-a779-4213-b0ce-4c423d76058b.webp) no-repeat;
+        background-size: cover;
         border-radius: 0 0 8px 8px;
         box-shadow: 0 -3px 0 0 #242424;
     }
